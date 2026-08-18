@@ -4,70 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog da Sãmily</title>
-
+    <title>blog da Sãmily</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #dff1eb;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
         header {
             background-color: #81c0b0;
             color: #0f0d0d;
             text-align: center;
-            max-width: 900px;
-            margin: 20px auto 40px auto;
-            padding: 25px;
-            border: 3px solid #183C63;
-            border-radius: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        body {
+            background-color: "black";
+
         }
 
-        header h1 {
-            margin-top: 0;
-        }
+        
+
+
 
         main {
-            max-width: 1050px;
-            margin: 0 auto 40px auto;
-            padding: 0 15px;
-        }
-
-        article {
+            background-color: #4ea37b;
+            color: #183C63;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            gap: 40px;
-
-            background-color: white;
-            padding: 30px;
-
-            border: 4px solid #4ea37b;
-            border-radius: 20px;
-
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
-        }
-
-        article div:first-child {
-            flex: 1;
-        }
-
-        article div:last-child {
-            flex-shrink: 0;
+            margin-bottom: 30px;
+            flex-direction: column;
+            gap: 20px;
         }
 
         img {
-            width: 320px;
-            height: 320px;
-            object-fit: cover;
-
-            border: 5px solid #183C63;
-            border-radius: 20px;
+            width: 200px;
+            height: 200px;
         }
 
         div p {
@@ -76,172 +44,120 @@
 
         .artigo-autor {
             font-weight: bold;
-            color: #183C63;
+    
+        }
+        .imagem {
+            width: 200px;
+            height: 200px;
         }
 
-        button {
-            padding: 8px 12px;
-            margin-right: 5px;
-            border: 2px solid #183C63;
-            border-radius: 8px;
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: white;
-            cursor: pointer;
-            font-size: 16px;
-        }
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
 
-        button:hover {
-            background-color: #dff1eb;
         }
-
-        footer {
+         footer {
             background-color: #183C63;
             color: white;
             text-align: center;
             padding: 20px;
-            margin-top: 40px;
-        }
-
-        /* Ajuste para celular */
-        @media (max-width: 700px) {
-
-            article {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            article div:last-child {
-                order: -1;
-            }
-
-            img {
-                width: 250px;
-                height: 250px;
-            }
         }
     </style>
 </head>
 
+
 <body>
-
     <header>
-        <h1>Meu Blog Tech</h1>
+        <h1>Meu blog tech</h1>
         <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <button>👍<span>0</span></button>
 
-        <button>❤️ <span>0</span></button>
-        <button>👍 <span>0</span></button>
+
+
     </header>
-
-    <!-- BLOG 1 -->
-    <main>
+     <main>
         <article>
             <div>
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
                 <h2>Meu primeiro post</h2>
-
                 <p class="artigo-autor">Por: Alexandra</p>
-
-                <p>
-                    Boas-vindas ao meu novo blog! Aqui vou compartilhar
-                    dicas de programação e curiosidades da área de tecnologia.
-                </p>
-
-                <button>❤️ <span>0</span></button>
-                <button>👎 <span>0</span></button>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
             </div>
-
             <div>
-                <img src="imagem-blog.png"
-                    alt="Livro com símbolos de tecnologia">
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
             </div>
         </article>
-    </main>
 
-    <!-- BLOG 2 -->
+    </main>
     <main>
         <article>
             <div>
-                <h2>Aprendendo programação</h2>
-
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
                 <p class="artigo-autor">Por: Alexandra</p>
-
-                <p>
-                    Aprender programação pode ser muito divertido.
-                    Com prática, podemos criar sites, aplicativos e muito mais.
-                </p>
-
-                <button>❤️ <span>0</span></button>
-                <button>👎 <span>0</span></button>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
             </div>
-
             <div>
-                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg"
-                    alt="Imagem relacionada à tecnologia">
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
             </div>
+
         </article>
     </main>
-
-    <!-- BLOG 3 -->
     <main>
         <article>
             <div>
-                <h2>Curiosidades sobre tecnologia</h2>
-
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
                 <p class="artigo-autor">Por: Alexandra</p>
-
-                <p>
-                    A tecnologia está presente em praticamente todos
-                    os momentos do nosso dia a dia.
-                </p>
-
-                <button>❤️ <span>0</span></button>
-                <button>👎 <span>0</span></button>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
             </div>
-
             <div>
-                <img src="imagem-blog.png"
-                    alt="Livro com símbolos de tecnologia">
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
             </div>
         </article>
     </main>
-
-    <!-- BLOG 4 -->
     <main>
         <article>
             <div>
-                <h2>Dicas para iniciantes</h2>
-
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
                 <p class="artigo-autor">Por: Alexandra</p>
-
-                <p>
-                    Uma boa maneira de começar a programar é praticar
-                    todos os dias e criar pequenos projetos.
-                </p>
-
-                <button>❤️ <span>0</span></button>
-                <button>👎 <span>0</span></button>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️<span>0</span></button>
+                <button>👎<span>0</span></button>
             </div>
-
             <div>
-                <img src="imagem-blog.png"
-                    alt="Livro com símbolos de tecnologia">
+                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
             </div>
         </article>
     </main>
-
     <footer>
-        <p>2026 Meu Blog Tech | Desenvolvido por Sãmily</p>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Sãmily</p>
     </footer>
-
     <script>
         const botoes = document.querySelectorAll("button");
-
         botoes.forEach(function (botao) {
             let curtiu = false;
-
             botao.addEventListener("click", botaoClicado);
-
             function botaoClicado() {
+                console.log("fui clicado");
                 let texto = botao.querySelector("span");
-
                 if (curtiu === false) {
                     texto.textContent++;
                     curtiu = true;
@@ -250,7 +166,7 @@
                     curtiu = false;
                 }
             }
-        });
+        })
     </script>
 
 </body>
