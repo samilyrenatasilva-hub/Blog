@@ -5,34 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog</title>
+
     <style>
-        header {
-            background-color: #183C63;
-            color: #FFFFFF;
-            text-align: center;
-            max-width: 800px;
-            margin-bottom: 30px;
-            margin: 0 auto;
+        * {
+            box-sizing: border-box;
         }
 
         body {
-            background-color: "yellow";
+            background-color: #dff3ff;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
+        header {
+            background-color: #9edcff;
+            color: #183C63;
+            text-align: center;
+            max-width: 900px;
+            margin: 20px auto 40px auto;
+            padding: 25px;
+            border: 3px solid #183C63;
+            border-radius: 15px;
+        }
+
+        header h1 {
+            margin-top: 0;
         }
 
         main {
-            background-color: #d4adcf;
+            background-color: #ffd6ec;
             color: #183C63;
             display: flex;
             align-items: center;
-            margin-bottom: 30px;
+            margin: 0 auto 40px auto;
             flex-direction: column;
             gap: 20px;
+            max-width: 1100px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+
+            background-color: white;
+            padding: 30px;
+            border: 4px solid #9edcff;
+            border-radius: 20px;
+
+            width: 95%;
+
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        article div:first-child {
+            flex: 1;
+        }
+
+        article div:last-child {
+            flex-shrink: 0;
         }
 
         img {
-            width: 80px;
-            height: 80px;
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+
+            border: 5px solid #ffacd6;
+            border-radius: 20px;
         }
 
         div p {
@@ -41,131 +84,258 @@
 
         .artigo-autor {
             font-weight: bold;
+            color: #183C63;
         }
 
-        .imagem {
-            width: 200px;
-            height: 200px;
+        h2 {
+            color: #183C63;
         }
 
-        article {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            width: 90%;
+        button {
+            padding: 8px 12px;
+            margin-right: 5px;
+            border: 2px solid #183C63;
+            border-radius: 8px;
+            background-color: #e5f6ff;
+            cursor: pointer;
+            font-size: 16px;
+        }
 
+        button:hover {
+            background-color: #ffd6ec;
         }
 
         footer {
-            background-color: #183C63;
-            color: white;
+            background-color: #9edcff;
+            color: #183C63;
             text-align: center;
             padding: 20px;
+            margin-top: 30px;
+            border-top: 4px solid #ffacd6;
+        }
+
+        /* Ajuste para celular */
+        @media (max-width: 700px) {
+
+            article {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            article div:last-child {
+                order: -1;
+            }
+
+            img {
+                width: 250px;
+                height: 250px;
+            }
         }
     </style>
 </head>
 
 <body>
+
     <header>
-        <h1>Meu blog tech</h1>
-        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-        <button>❤️<span>0</span></button>
-        <button>👍<span>0</span></button>
+        <h1>Meu Blog</h1>
 
+        <p>
+            Vou compartilhar conhecimentos sobre música,
+            tecnologia e vários assuntos interessantes.
+        </p>
+
+        <button>❤️ <span>0</span></button>
+        <button>👍 <span>0</span></button>
     </header>
-    <main>
-        <article>
-            <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
-                <h2>Meu primeiro post</h2>
-                <p class="artigo-autor">Por: Alexandra</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                    tecnologia.</p>
-                <button>❤️<span>0</span></button>
-                <button>👎<span>0</span></button>
-            </div>
-            <div>
-                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
-            </div>
-        </article>
 
-    </main>
+
+    <!-- BLOG 1 - ROCK -->
     <main>
         <article>
+
             <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
-                <h2>Meu primeiro post</h2>
-                <p class="artigo-autor">Por: Alexandra</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                    tecnologia.</p>
-                <button>❤️<span>0</span></button>
-                <button>👎<span>0</span></button>
+                <h2>🎸 Rock</h2>
+
+                <p class="artigo-autor">
+                    Criado por: Sãmily
+                </p>
+
+                <p>
+                    O rock é um estilo musical muito conhecido e
+                    possui vários subgêneros. Ele surgiu a partir
+                    de diferentes influências musicais e conquistou
+                    fãs no mundo inteiro.
+                </p>
+
+                <p>
+                    Algumas características marcantes do rock são
+                    as guitarras, a bateria e os vocais fortes.
+                    Existem estilos como rock clássico, punk rock,
+                    hard rock e muitos outros.
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>👎 <span>0</span></button>
             </div>
+
             <div>
-                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+                <img src="imagem-blog.png"
+                    alt="Imagem relacionada à música rock">
             </div>
 
         </article>
     </main>
+
+
+    <!-- BLOG 2 - ELETRÔNICA -->
     <main>
         <article>
+
             <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
-                <h2>Meu primeiro post</h2>
-                <p class="artigo-autor">Por: Alexandra</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                    tecnologia.</p>
-                <button>❤️<span>0</span></button>
-                <button>👎<span>0</span></button>
+                <h2>🎧 Música Eletrônica</h2>
+
+                <p class="artigo-autor">
+                    Criado por: Sãmily
+                </p>
+
+                <p>
+                    A música eletrônica utiliza equipamentos
+                    tecnológicos e sons produzidos ou modificados
+                    digitalmente.
+                </p>
+
+                <p>
+                    Existem vários estilos de música eletrônica,
+                    como house, techno, trance e muitos outros.
+                    É um gênero muito presente em festas e festivais
+                    de música.
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>👎 <span>0</span></button>
             </div>
+
             <div>
-                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg"
+                    alt="Imagem relacionada à música eletrônica">
             </div>
+
         </article>
     </main>
+
+
+    <!-- BLOG 3 - POP -->
     <main>
         <article>
+
             <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
-                <h2>Meu primeiro post</h2>
-                <p class="artigo-autor">Por: Alexandra</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                    tecnologia.</p>
-                <button>❤️<span>0</span></button>
-                <button>👎<span>0</span></button>
+                <h2>🎤 Música Pop</h2>
+
+                <p class="artigo-autor">
+                    Criado por: Sãmily
+                </p>
+
+                <p>
+                    A música pop é um dos estilos mais populares
+                    do mundo. Ela costuma ter melodias fáceis de
+                    memorizar e músicas que rapidamente conquistam
+                    o público.
+                </p>
+
+                <p>
+                    O pop possui influências de vários outros
+                    estilos musicais e está sempre mudando,
+                    acompanhando novas tendências.
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>👎 <span>0</span></button>
             </div>
+
             <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
+                <img src="imagem-blog.png"
+                    alt="Imagem relacionada à música pop">
             </div>
+
         </article>
     </main>
+
+
+    <!-- BLOG 4 - TECNOLOGIA -->
+    <main>
+        <article>
+
+            <div>
+                <h2>💻 Curiosidades sobre Tecnologia</h2>
+
+                <p class="artigo-autor">
+                    Criado por: Sãmily
+                </p>
+
+                <p>
+                    A tecnologia está presente em praticamente
+                    todos os momentos do nosso dia a dia.
+                    Usamos computadores, celulares e diversos
+                    outros dispositivos.
+                </p>
+
+                <p>
+                    A programação também faz parte desse universo.
+                    Com ela podemos criar sites, aplicativos,
+                    jogos e muitas outras coisas interessantes.
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>👎 <span>0</span></button>
+            </div>
+
+            <div>
+                <img src="imagem-blog.png"
+                    alt="Imagem relacionada à tecnologia">
+            </div>
+
+        </article>
+    </main>
+
 
     <footer>
-        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+        <p>2026 Meu Blog | Criado por Sãmily</p>
     </footer>
 
+
     <script>
+
         const botoes = document.querySelectorAll("button");
+
         botoes.forEach(function (botao) {
+
             let curtiu = false;
+
             botao.addEventListener("click", botaoClicado);
+
             function botaoClicado() {
+
                 console.log("fui clicado");
+
                 let texto = botao.querySelector("span");
+
                 if (curtiu === false) {
+
                     texto.textContent++;
                     curtiu = true;
+
                 } else {
+
                     texto.textContent--;
                     curtiu = false;
+
                 }
             }
-        })
+        });
+
     </script>
 
 </body>
 
 </html>
+
